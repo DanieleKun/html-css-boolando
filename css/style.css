@@ -13,15 +13,31 @@ main {
     margin-top: 20px;
 }
 
+.row {
+    display: inline-block;
+}
+
 .card {
     display: inline-block;
     width: 300px;
+    margin: 10px;
     position: relative;
 }
 
 .card img {
     width: 100%;
     height: auto;
+}
+
+.hover-product {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.product:hover .hover-product {
+    display: block;
 }
 
 .label-discount {
@@ -51,4 +67,17 @@ main {
     position: absolute;
     top: 20px;
     right: 0;
+}
+
+.brand {
+    color: gray;
+    font-size: 10px;
+}
+
+.price-discount  {
+    color: red;
+}
+
+.original-price {
+    text-decoration: line-through;
 }
